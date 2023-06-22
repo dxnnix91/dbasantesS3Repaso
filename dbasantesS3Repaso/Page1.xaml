@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dbasantesS3Repaso.Page1" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana 1" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Image Source="https://www.definemg.com/wp-content/uploads/2013/01/android.jpg"></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0" Style="{StaticResource miEstilo}"></Label>
+                <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"></Label>
+                <Label Text="bntIniciar" FontSize="20" Grid.Row="2" Grid.Column="0"></Label>
+                <Entry x:Name="txtUsuario" Placeholder="ingrese el usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Entry x:Name="txtContrasena" Placeholder="ingrese el usuario" Grid.Row="1" Grid.Column="1"></Entry>
+                <Button x:Name="btbIniciar" Text="Iniciar" Clicked="btbIniciar_Clicked" Grid.Row="2" Grid.Column="0"></Button>
+                <ImageButton Source="cancelar.png" WidthRequest="15" HeightRequest="15" Grid.Row="2" Grid.Column="1" ></ImageButton>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

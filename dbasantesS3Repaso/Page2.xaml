@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dbasantesS3Repaso.Page2">
+    ¨
+    <ContentPage.Resources>
+        <Style x:Name="buttonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Azure"></Setter>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana 2 "/>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="End" TextColor="red" FontSize="16"></Label>
+            <Entry x:Name="txtDato" Placeholder="Dato" Keyboard="Numeric" TextChanged="txtDato_TextChanged"></Entry>
+            <Picker Title="Estudiantes" x:Name="pkEstudiantes">
+                <Picker.Items>
+                    <x:String>Daniel</x:String>
+                    <x:String>Edison</x:String>
+                    <x:String>Enma</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button x:Name="btnAbrir" Text="Abrir" Clicked="btnAbrir_Clicked" Style="{StaticResource buttonStyle }"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
